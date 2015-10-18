@@ -136,6 +136,11 @@ var Image = React.createClass({
      * @platform ios
      */
     onLoadEnd: PropTypes.func,
+    /**
+    * Determines whether or not to use the cache for local images
+    * @platform ios
+    */
+    useCache: PropTypes.bool,
   },
 
   statics: {
