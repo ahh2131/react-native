@@ -20,6 +20,6 @@
 @property (nonatomic, strong) UIImage *defaultImage;
 @property (nonatomic, assign) UIImageRenderingMode renderingMode;
 @property (nonatomic, copy) NSString *src;
-@property (nonatomic, assign) BOOL *useCache;
+@property (nonatomic, assign) BOOL useCache;
 
 @end
