@@ -115,8 +115,18 @@ RCT_NOT_IMPLEMENTED(- (instancetype)init)
   }
 }
 
+- (void)setUseCache:(BOOL)useCache
+{
+  NSLog("this is a use cache test");
+  if (_useCache != useCache) {
+    _useCache = useCache;
+    [self updateImage];
+  }
+}
+
 - (void)setSrc:(NSString *)src
 {
+  NSLog("set src test");
   if (![src isEqual:_src]) {
     _src = [src copy];
     [self reloadImage];
